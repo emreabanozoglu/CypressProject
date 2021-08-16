@@ -30,14 +30,14 @@ export class CheckoutPage {
 
     cy.get(lastNameLocator)
       .invoke("attr", "placeholder")
-      .then((firstNamePlaceHolder) => {
-        expect(firstNamePlaceHolder).to.equal("Last Name");
+      .then((lastNamePlaceHolder) => {
+        expect(lastNamePlaceHolder).to.equal("Last Name");
       });
 
     cy.get(zipCodeLocator)
       .invoke("attr", "placeholder")
-      .then((firstNamePlaceHolder) => {
-        expect(firstNamePlaceHolder).to.equal("Zip/Postal Code");
+      .then((zipCodePlaceHolder) => {
+        expect(zipCodePlaceHolder).to.equal("Zip/Postal Code");
       });
   }
 
