@@ -30,6 +30,11 @@ describe("Cypress Home Task Project", () => {
 
   it("Try to login with locked user", () => {
     onLoginPage.login("locked_out_user", "secret_sauce");
-    onLoginPage.checkTheErrorMessageForLockedUser();
+    onLoginPage.checkTheErrorMessages("Epic sadface: Sorry, this user has been locked out.");
   });
+
+  it("Try to login with wrong username and password", () => {
+    onLoginPage.login("test","test1")
+    onLoginPage.checkTheErrorMessages("Epic sadface: Username and password do not match any user in this service")
+  })
 });

@@ -1,6 +1,6 @@
-const usernameLocator = "#user-name";
-const passwordLocator = "#password";
-const loginButtonLocator = "#login-button";
+const usernameLocator = '[data-test="username"]';
+const passwordLocator = '[data-test="password"]';
+const loginButtonLocator = '[data-test="login-button"]';
 const lockedUserErrorMessageLocator = '[data-test="error"]';
 
 export class LoginPage {
@@ -10,10 +10,10 @@ export class LoginPage {
     cy.get(loginButtonLocator).click();
   }
 
-  checkTheErrorMessageForLockedUser() {
+  checkTheErrorMessages(errorMessage) {
     cy.get(lockedUserErrorMessageLocator).should(
       "contain",
-      "Epic sadface: Sorry, this user has been locked out."
+      errorMessage
     );
   }
 }

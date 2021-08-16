@@ -1,11 +1,11 @@
 let priceFromCartPage;
 const inventoryItemPriceLocator = ".inventory_item_price";
-const firstNameLocator = "#first-name";
-const lastNameLocator = "#last-name";
-const zipCodeLocator = "#postal-code";
-const continueButtonLocator = "#continue";
+const firstNameLocator = '[data-test="firstName"]';
+const lastNameLocator = '[data-test="lastName"]';
+const zipCodeLocator = '[data-test="postalCode"]';
+const continueButtonLocator = '[data-test="continue"]';
 const pageTitleLocator = ".title";
-const finishButtonLocator = "#finish";
+const finishButtonLocator = '[data-test="finish"]';
 const checkoutCompleteHeaderLocator = ".complete-header";
 const checkoutComleteTextLocator = ".complete-text";
 
