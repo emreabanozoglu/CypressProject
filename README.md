@@ -1,5 +1,12 @@
 # Cypress Project
 
+## Introduction
+* In this project I created 3 test scenarios for testing the sause lab demo web site.
+
+* Used the Page Object Model design pattern. So every pages have own page classes and we can find the page methods in that classes.
+
+* Created a costom command for picking the random items from the items list. You can find it in cypress/support/commands.js
+
 ## Requirements
 - node.js should be installed in the instance
 
